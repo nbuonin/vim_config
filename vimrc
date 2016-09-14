@@ -106,3 +106,5 @@ set backupdir=/private/tmp
 " tell vim where to put swap files
 set dir=/private/tmp
 set number
+map <F7> :tabp
+map <F7> :tabn
