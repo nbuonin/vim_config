@@ -105,4 +105,4 @@ set backupdir=/private/tmp
 
 " tell vim where to put swap files
 set dir=/private/tmp
-
+set number
