@@ -106,5 +106,14 @@ set backupdir=/private/tmp
 " tell vim where to put swap files
 set dir=/private/tmp
 set number
-map <F7> :tabp
-map <F7> :tabn
+" set key mapping to switch between tabs
+map <F7> :tabp <CR>
+map <F8> :tabn <CR>
+
+filetype plugin indent on
+" show existing tab with 4 spaces width
+set tabstop=2
+" when indenting with '>', use 4 spaces width
+set shiftwidth=2
+" On pressing tab, insert 4 spaces
+set expandtab
