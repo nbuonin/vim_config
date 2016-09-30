@@ -129,3 +129,7 @@ set backupdir^=~/.backup
 " incorporate
 " full path into swap file names.
 set dir^=~/.backup//
+
+" Turn on outocompletion
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
