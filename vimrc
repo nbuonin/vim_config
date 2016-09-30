@@ -101,10 +101,11 @@ endif
 set backup
 
 " tell vim where to put its backup files
-set backupdir=/private/tmp
+"set backupdir=/private/tmp
 
 " tell vim where to put swap files
-set dir=/private/tmp
+" set dir=/private/tmp
+" add line numbers
 set number
 " set key mapping to switch between tabs
 map <F7> :tabp <CR>
@@ -117,3 +118,14 @@ set tabstop=2
 set shiftwidth=2
 " On pressing tab, insert 4 spaces
 set expandtab
+
+" from Jae
+" Prepend ~/.backup to backupdir so that Vim will look for that directory
+" before littering the current dir with backups.
+" You need to do "mkdir ~/.backup" for this to work.
+set backupdir^=~/.backup
+
+" Also use ~/.backup for swap files. The trailing // tells Vim to
+" incorporate
+" full path into swap file names.
+set dir^=~/.backup//
